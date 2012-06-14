@@ -17,25 +17,8 @@
       [Enter License Description here.]
    </license>
 
-   <plugin
-         id="net.bioclipse.ds.models.ahr"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="net.bioclipse.ds.models.ames"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="net.bioclipse.ds.models.cpdb"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+   <includes
+         id="net.bioclipse.ds.models_feature"
+         version="0.0.0"/>
 
 </feature>

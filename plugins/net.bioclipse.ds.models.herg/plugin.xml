@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension
+    	point="org.eclipse.help.toc">
+		<toc
+        	file="toc.xml"
+         	primary="false"/>
+	</extension>
+
+
+   <extension
+         point="net.bioclipse.decisionsupport">
+         
+         <endpoint
+               id="net.bioclipse.ds.herg"
+               description="HeRG"
+               icon="icons/poison.gif"
+               name="Carcinogenicity">
+         </endpoint>
+
+        <test id="hERG@PKKB-all-data-classi.qsar" name="hERG@PKKB-all-data-classi
+        QSAR" endpoint="net.bioclipse.ds.modeling.ui.endpoints"
+        class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
+        consensus="net.bioclipse.ds.consensus.majority.emptyinconclusive">
+            <parameter name="isClassification" value="true"/>
+            <parameter name="positiveValue" value="1"/>
+            <parameter name="negativeValue" value="0"/>
+            <parameter name="classLabels" value="1, 0"/>
+            <parameter name="responseProperty" value="class"/>
+            <parameter name="signatures.min.height" value="0"/>
+            <parameter name="signatures.max.height" value="3"/>
+            <resource name="trainFile" path="/models/hERG@PKKB-all-data-classi.train"/>
+            <resource name="modelfile" path="/models/hERG@PKKB-all-data-classi.model"/>
+            <resource name="signaturesfile" path="/models/hERG@PKKB-all-data-classi.sign"/>
+            <parameter name="Model type" value="QSAR"/>
+            <parameter name="Learning model" value="SVM"/>
+            <parameter name="Model choice" value="Maximal
+            accuracy, with 5-fold cross-validated accuracy
+            as objective function"/>
+            <parameter name="Model performance" value="0.826302729528536"/>
+            <parameter name="Learning parameters" value="kernel=RBF,
+            c=316.2277660168379, gamma=9.765625E-4"/>
+            <parameter name="Descriptors" value="Signatures
+            (height 0-3)"/>
+            <parameter name="Observations" value="806"/>
+            <parameter name="Variables" value="10360"/>
+        </test>         
+ </extension>
+   
+   
+</plugin>

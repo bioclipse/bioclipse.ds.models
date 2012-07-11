@@ -68,7 +68,7 @@ public class ChemblLookup {
 			String value = res.getColumn("val").get(i);
 			String unit = res.getColumn("units").get(i);
 			String inttype = res.getColumn("interactionType").get(i);
-			String targetType = res.getColumn("targetType").get(i);
+//			String targetType = res.getColumn("targetType").get(i);
 			String title = res.getColumn("title").get(i);
 			String interactionType = res.getColumn("interactionType").get(i);
 			String relation = res.getColumn("relation").get(i);
@@ -83,7 +83,7 @@ public class ChemblLookup {
 			
 			interaction.setTitle(title);
 			interaction.setRelation(relation);
-			interaction.setTargetType(targetType);
+//			interaction.setTargetType(targetType);
 			interaction.setInteractionType(interactionType);
 			interaction.setDescription(description);
 

@@ -25,4 +25,8 @@
          id="net.bioclipse.ds.models.r_feature"
          version="0.0.0"/>
 
+   <includes
+         id="net.bioclipse.opentox.ds_feature"
+         version="0.0.0"/>
+
 </feature>

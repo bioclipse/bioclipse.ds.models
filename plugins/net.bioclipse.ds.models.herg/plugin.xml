@@ -46,6 +46,9 @@
             (height 0-3)"/>
             <parameter name="Observations" value="806"/>
             <parameter name="Variables" value="10360"/>
+            
+            <parameter name="URL" value="http://cadd.suda.edu.cn/admet/downloads/hERG"/>
+            
         </test>         
  </extension>
    

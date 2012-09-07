@@ -88,7 +88,7 @@
 
       <test 
             id="ahr.signatures"
-            name="AHR Signature Significance"
+            name="AHR QSAR"
             class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
             propertycalculator="AHR Signature Significance"
             endpoint="net.bioclipse.ds.ahr"

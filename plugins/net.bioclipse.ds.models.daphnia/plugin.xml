@@ -3,8 +3,8 @@
 <plugin>
     <extension point="net.bioclipse.decisionsupport">
     <endpoint
-          id="net.bioclipse.ds.models.daphnia"
-          name="Daphnia">
+          id="net.bioclipse.ds.endpoints.aquatic"
+          name="Aquatic Toxicity">
     </endpoint>
         <!--test id="daphnia.qsar" name="daphnia QSAR" endpoint="net.bioclipse.ds.models.daphnia"
         class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
@@ -64,7 +64,7 @@
       <test
             id="daphnia.smarts"
             name="Daphnia SMARTS"
-            endpoint="net.bioclipse.ds.models.daphnia"
+            endpoint="net.bioclipse.ds.endpoints.aquatic"
             consensus="net.bioclipse.ds.consensus.majority.emptynegative"
             class="net.bioclipse.ds.matcher.SmartsAlertMatcher">
 
@@ -74,8 +74,16 @@
             
             <parameter name="Model type" value="SMARTS matching" />
             <parameter name="Observations" value="18" />
+            <parameter name="URL" value="http://pubs.acs.org/doi/abs/10.1021/tx0497954" />
             
       </test>        
     </extension>
+
+	<extension
+    	point="org.eclipse.help.toc">
+		<toc
+        	file="toc.xml"
+         	primary="false"/>
+	</extension>
     
 </plugin>

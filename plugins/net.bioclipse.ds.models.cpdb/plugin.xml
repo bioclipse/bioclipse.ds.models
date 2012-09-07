@@ -126,7 +126,7 @@
       
        <test 
             id="cpdb.signatures.classification"
-            name="CPDB Signature Significance"
+            name="CPDB QSAR"
             class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
             endpoint="net.bioclipse.ds.carcinogenicity"
             informative="false"

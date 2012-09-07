@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="net.bioclipse.decisionsupport">
+    <endpoint
+          id="net.bioclipse.ds.models.daphnia"
+          name="Daphnia">
+    </endpoint>
+        <!--test id="daphnia.qsar" name="daphnia QSAR" endpoint="net.bioclipse.ds.models.daphnia"
+        class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
+        consensus="net.bioclipse.ds.consensus.majority.emptyinconclusive">
+            <parameter name="isClassification" value="false"/>
+            <parameter name="highPercentile" value="NaN"/>
+            <parameter name="lowPercentile" value="NaN"/>
+            <parameter name="responseProperty" value="log
+            IC50 (Mol/L)"/>
+            <parameter name="signatures.min.height" value="0"/>
+            <parameter name="signatures.max.height" value="3"/>
+            <resource name="trainFile" path="/models/daphnia.train"/>
+            <resource name="modelfile" path="/models/daphnia.model"/>
+            <resource name="signaturesfile" path="/models/daphnia.sign"/>
+            <parameter name="Model type" value="QSAR"/>
+            <parameter name="Learning model" value="SVM"/>
+            <parameter name="Model choice" value="Maximal
+            R^2, with 5-fold cross-validated accuracy as
+            objective function"/>
+            <parameter name="Model performance" value="-0.03435296446356739"/>
+            <parameter name="Learning parameters" value="kernel=RBF,
+            c=316.2277660168379, gamme=9.765625E-4"/>
+            <parameter name="Descriptors" value="Signatures
+            (height 0-3)"/>
+            <parameter name="Observations" value="300"/>
+            <parameter name="Variables" value="2110"/>
+        </test>
+
+        <test id="daphnia.near" name="daphnia Near Neighbors"
+        endpoint="net.bioclipse.ds.models.daphnia"
+        consensus="net.bioclipse.ds.consensus.majority.emptyinconclusive"
+        class="net.bioclipse.ds.matcher.SDFNearestMatchFP">
+            <parameter name="distance.tanimoto" value="0.7"/>
+            <parameter name="responseProperty" value="log
+            IC50 (Mol/L)"/>
+            <parameter name="isClassification" value="false"/>
+            <parameter name="Similarity threshold" value="0.7"/>
+            <parameter name="Similarity metric" value="Tanimoto"/>
+            <parameter name="Size" value="300"/>
+            <parameter name="Model type" value="Near Neighbor,
+            CDK Fingerprint (size 1024)"/>
+            <resource name="file" path="data/DaphniaData-modelbuild.sdf_NN_daphnia"/>
+        </test>
+
+        <test id="daphnia.exact.sign" name="daphnia Exact
+        Matches" endpoint="net.bioclipse.ds.models.daphnia"
+        class="net.bioclipse.ds.matcher.SDFExactMatcherSignatures">
+            <parameter name="responseProperty" value="log
+            IC50 (Mol/L)"/>
+            <parameter name="isClassification" value="false"/>
+            <parameter name="Size" value="300"/>
+            <parameter name="Model type" value="Exact match,
+            Molecule Signature"/>
+            <resource name="file" path="data/DaphniaData-modelbuild.sdf_EXACT_daphnia"/>
+        </test-->
+        
+      <test
+            id="daphnia.smarts"
+            name="Daphnia SMARTS"
+            endpoint="net.bioclipse.ds.models.daphnia"
+            consensus="net.bioclipse.ds.consensus.majority.emptynegative"
+            class="net.bioclipse.ds.matcher.SmartsAlertMatcher">
+
+            <resource name="file"
+                  path="models/daphnia_SA_SMARTS_corrected.txt">
+            </resource>
+            
+            <parameter name="Model type" value="SMARTS matching" />
+            <parameter name="Observations" value="18" />
+            
+      </test>        
+    </extension>
+    
+</plugin>

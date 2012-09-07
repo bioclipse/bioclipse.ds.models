@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.bioclipse.ds.models.daphnia_feature"
+      label="Daphnia models"
+      version="1.0.0.qualifier"
+      provider-name="bioclipse.net">
+
+   <description>
+      Daphnia models
+   </description>
+
+   <requires>
+      <import feature="net.bioclipse.ds_feature" version="2.5.0.qualifier"/>
+      <import feature="net.bioclipse.chemoinformatics_feature" version="2.5.0.qualifier"/>
+      <import feature="net.bioclipse.core_feature" version="2.5.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="net.bioclipse.ds.models.daphnia"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

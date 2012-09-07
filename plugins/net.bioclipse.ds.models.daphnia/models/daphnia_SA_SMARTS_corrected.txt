@@ -1,0 +1,18 @@
+[CH]=[CH]C=O	SA1.1 alpha-beta-Unsaturated carbonyl
+[CH]=[CH]C#N	SA1.2 alpha-beta-Unsaturated nitrile
+[C,O,N][CH]=C([F,Cl,Br,I])([F,Cl,Br,I])	SA2 Carbon-carbon double bond activated by two halogens
+P(=S)(O)(O)([O,S])	SA3.1 Phosphorothionates with different heteroatoms
+P(=S)(O)(C)([O,S])	SA3.2 Thiophosphonates
+P(=O)(O)(C)([O,S])	SA3.3 Phosphonates
+[CH2][SH]	SA4 Aliphatic thiols
+S=C=N	SA5.1 Isothiocyanates
+SC#N	SA5.2 Thiocyanates
+[NH]C(=O)O	SA6.1 Simple carbamates
+[NH]C(=O)S	SA6.2 Thiocarbamates
+[$([NH2]C(=S)S),$([NH]([CH3])C(=S)S),$(N([CH3])([CH3])C(=S)S)]	SA6.3 Dithiocarbamates
+N1C(=S)S[C,N,O,S][C,N,O,S]1	SA6.4 Rhodanin derivatives
+[$([NH2]C(=S)[NH2]),$([NH]([CH3])C(=S)[NH2]),$(N([CH3])([CH3])C(=S)[NH2]),$([NH]([CH3])C(=S)[NH]([CH3]))]	SA7.1 Methyl Thiourea derivatives
+[$([NH2]C(=S)[NH]),!$([NH2]C(=S)[NH2]),!$([NH2]C(=S)[NH][CH3])]	SA7.2 Aliphatic Thiourea derivative
+C1[NH]C(=S)[NH]C1	SA7.3 Cyclic ethylene-thiourea derivatives
+[$(c1c[c&H1]c([NH2])[c&H1]c1),$(c1c[c&H1]c([NH][CH3])[c&H1]c1),$(c1c[c&H1]c([NH][CH2][CH3])[c&H1]c1)]	SA8 Primary or secondary anilines without ortho substituents
+C(=[N,O])[NH][C,O,N]=[C,O,N]	SA9. Imide derivatives with different heteroatoms

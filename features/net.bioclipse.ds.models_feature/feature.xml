@@ -18,18 +18,10 @@
    </license>
 
    <plugin
-         id="net.bioclipse.ds.models.ahr"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="net.bioclipse.ds.models.ames"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         version="0.0.0"/>
 
    <plugin
          id="net.bioclipse.ds.models.cpdb"
@@ -37,6 +29,26 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.ahr"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.herg"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.daphnia"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
    <plugin
          id="net.bioclipse.ds.models.chemspider"

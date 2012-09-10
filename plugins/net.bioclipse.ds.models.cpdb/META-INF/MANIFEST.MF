@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Carcinogenicity models based on CPDB
+Bundle-Name: Carcinogenicity models (CPDB)
 Bundle-SymbolicName: net.bioclipse.ds.models.cpdb;singleton:=true
 Bundle-Version: 2.5.0.qualifier
 Bundle-Vendor: bioclipse.net

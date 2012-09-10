@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: AhR models
+Bundle-Name: Aryl Hydrocarbon Receptor (AHR) inhibition
 Bundle-SymbolicName: net.bioclipse.ds.models.ahr;singleton:=true
 Bundle-Version: 2.5.1.qualifier
 Bundle-Vendor: bioclipse.net

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Daphnica models
+Bundle-Name: Aquatic Toxicity (Daphnia)
 Bundle-SymbolicName: net.bioclipse.ds.models.daphnia;singleton:=true
 Bundle-Version: 0.2.1.qualifier
 Bundle-Vendor: bioclipse.net

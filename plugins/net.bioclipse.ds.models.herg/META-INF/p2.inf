@@ -1,2 +1,4 @@
 properties.1.name=org.eclipse.equinox.p2.type.group
 properties.1.value=true
+properties.2.name=org.eclipse.equinox.p2.description
+properties.2.value=QSAR model for predicting Human Ether-a-go-go-Related Gene (hERG) based on data from PharmacoKinetics KnowledgeBase, Thai et al. (2008).

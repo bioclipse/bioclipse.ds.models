@@ -10,9 +10,9 @@
    </description>
 
    <requires>
-      <import feature="net.bioclipse.ds_feature" version="2.5.0.qualifier"/>
-      <import feature="net.bioclipse.chemoinformatics_feature" version="2.5.0.qualifier"/>
-      <import feature="net.bioclipse.core_feature" version="2.5.0.qualifier"/>
+      <import feature="net.bioclipse.ds_feature" version="2.5.0" match="compatible"/>
+      <import feature="net.bioclipse.chemoinformatics_feature" version="2.5.0" match="compatible"/>
+      <import feature="net.bioclipse.core_feature" version="2.5.0" match="compatible"/>
    </requires>
 
    <plugin

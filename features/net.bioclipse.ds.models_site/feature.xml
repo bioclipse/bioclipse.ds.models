@@ -29,4 +29,8 @@
          id="net.bioclipse.opentox.ds_feature"
          version="0.0.0"/>
 
+   <includes
+         id="net.bioclipse.smartcyp_feature"
+         version="0.0.0"/>
+
 </feature>

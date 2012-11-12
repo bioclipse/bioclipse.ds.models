@@ -2,3 +2,6 @@ properties.1.name=org.eclipse.equinox.p2.type.group
 properties.1.value=true
 properties.2.name=org.eclipse.equinox.p2.description
 properties.2.value=QSAR model for predicting Aquatic Toxicity based on Daphnid assay data from Von der Ohe et al. (2005).
+
+requires.0.namespace = org.eclipse.equinox.p2.iu
+requires.0.name = net.bioclipse.ds_feature.feature.group

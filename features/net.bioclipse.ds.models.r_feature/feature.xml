@@ -26,6 +26,10 @@ The Eclipse Public License accompanies this distribution, and
 is available at http://www.eclipse.org/legal/epl-v10.html
    </license>
 
+   <includes
+         id="net.bioclipse.ds_feature"
+         version="0.0.0"/>
+
    <requires>
       <import feature="net.bioclipse.ds_feature" version="2.5.0" match="compatible"/>
       <import feature="net.bioclipse.r_feature" version="2.5.0" match="compatible"/>

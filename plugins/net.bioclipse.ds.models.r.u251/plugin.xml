@@ -2,6 +2,16 @@
 <?eclipse version="3.4"?>
 <plugin>
 
+	<extension
+    	point="org.eclipse.help.toc">
+		<toc
+        	file="tocEP.xml"
+         	primary="false"/>
+		<toc
+        	file="tocModels.xml"
+         	primary="false"/>
+	</extension>
+
    <extension
          point="net.bioclipse.decisionsupport">
       <endpoint

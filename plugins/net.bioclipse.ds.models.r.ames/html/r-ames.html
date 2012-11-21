@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Ames Mutagenicity Models in R</title>
+  <link rel="stylesheet" href="../../PRODUCT_PLUGIN/narrow_book.css" type="text/css">
+</head>
+
+<body>
+<h1>Ames Mutagenicity Models in R</h1>
+
+<h2>Overview</h2>
+These mutagenicity models are built on data from Ames <i>Salmonella</i> microsome mutagenicity assays 
+(AMES test) [1].
+
+
+<h2>Data source</h2>
+The AMES dataset published by Kazius et al. [2]  was downloaded from 
+<a href="http://cheminformatics.org/datasets/bursi/">
+http://cheminformatics.org/datasets/bursi/</a>. 
+The dataset contained 4337 chemical structures of which 2401 were 
+classified as <i>mutagen</i>, and 1936 <i>nonmutagen</i>. 
+
+<h2>Models</h2>
+
+<table>
+<td bgcolor="cccccc" width=150>Model type</td>
+<td bgcolor="cccccc">Model implementation</td>
+<td bgcolor="cccccc">Comment</td>
+<tr>
+
+<td>QSAR</td>
+<td>SVM model with Signature descriptor height 1-3 implemented in R</td>
+<td></td>
+<tr>
+
+</table>
+
+
+
+<h2>References</h2>
+
+[1]	K. Mortelmans and E. Zeiger<br>
+The ames salmonella/microsome mutagenicity assay<br>
+<i>Mutat Res</i>, 455(1-2):29-60, Nov 2000<br>
+
+<p>
+
+[2] J. Kazius, R. McGuire, and R. Bursi<br>
+Derivation and validation of toxicophores for mutagenicity prediction<br> 
+<i>J Med Chem</i>, 48(1):312-320, Jan 2005<br>
+
+
+</body>
+</html>

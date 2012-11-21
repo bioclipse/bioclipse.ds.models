@@ -5,7 +5,10 @@
 	<extension
     	point="org.eclipse.help.toc">
 		<toc
-        	file="toc.xml"
+        	file="tocModels.xml"
+         	primary="false"/>
+		<toc
+        	file="tocEP.xml"
          	primary="false"/>
 	</extension>
 

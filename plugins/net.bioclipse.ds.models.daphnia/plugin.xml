@@ -82,7 +82,10 @@
 	<extension
     	point="org.eclipse.help.toc">
 		<toc
-        	file="toc.xml"
+        	file="tocEP.xml"
+         	primary="false"/>
+		<toc
+        	file="tocModels.xml"
          	primary="false"/>
 	</extension>
     

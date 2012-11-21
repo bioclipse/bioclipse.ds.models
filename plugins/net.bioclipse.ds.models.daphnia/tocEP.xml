@@ -2,5 +2,5 @@
 <?NLS TYPE="org.eclipse.help.toc"?>
 
 <toc link_to="../net.bioclipse.ds.ui/toc.xml#ContributedEndpoints" label="Aquatic Toxicity" >
-		<topic label="Aquatic Toxicity"  href="html/daphnia.html" /> 
+		<topic label="Aquatic Toxicity"  href="html/aquatictox.html" /> 
 </toc>

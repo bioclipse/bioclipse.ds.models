@@ -21,7 +21,22 @@
          id="net.bioclipse.ds.models.ames"
          download-size="0"
          install-size="0"
-         version="0.0.0"/>
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.ahr"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.chemspider"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 
    <plugin
          id="net.bioclipse.ds.models.cpdb"
@@ -31,7 +46,14 @@
          unpack="false"/>
 
    <plugin
-         id="net.bioclipse.ds.models.ahr"
+         id="net.bioclipse.ds.models.cyp.pcm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.bioclipse.ds.models.daphnia"
          download-size="0"
          install-size="0"
          version="0.0.0"
@@ -45,13 +67,14 @@
          unpack="false"/>
 
    <plugin
-         id="net.bioclipse.ds.models.daphnia"
+         id="net.bioclipse.ds.models.r.ames"
          download-size="0"
          install-size="0"
-         version="0.0.0"/>
+         version="0.0.0"
+         unpack="false"/>
 
    <plugin
-         id="net.bioclipse.ds.models.chemspider"
+         id="net.bioclipse.ds.models.r.u251"
          download-size="0"
          install-size="0"
          version="0.0.0"

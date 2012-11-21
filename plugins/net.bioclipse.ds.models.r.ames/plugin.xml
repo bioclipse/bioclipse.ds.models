@@ -2,10 +2,18 @@
 <?eclipse version="3.4"?>
 <plugin>
 
+	<extension
+    	point="org.eclipse.help.toc">
+		<toc
+        	file="tocModels.xml"
+         	primary="false"/>
+	</extension>
+
+
    <extension
          point="net.bioclipse.decisionsupport">
       <endpoint
-            name="Mutagenicity"
+            name="Ames Mutagenicity"
             description="AMES mutagenicity test"
             id="net.bioclipse.ds.r.ames.endpoint">
       </endpoint>

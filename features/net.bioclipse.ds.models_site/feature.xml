@@ -2,7 +2,7 @@
 <feature
       id="net.bioclipse.ds.models_site"
       label="DS Models"
-      version="0.1.1"
+      version="2.6.0.qualifier"
       provider-name="bioclipse.net">
 
    <description>

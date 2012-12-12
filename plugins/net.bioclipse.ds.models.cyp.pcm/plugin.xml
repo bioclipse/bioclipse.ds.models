@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="net.bioclipse.decisionsupport">
+
+         <endpoint
+               id="net.bioclipse.ds.cyp"
+               description="Cytochrome P450"
+               icon="icons/poison.gif"
+               name="CYP PCM">
+         </endpoint>
+
+       <test 
+            id="cyp.pcm.signatures.classification"
+            name="PCM CYP"
+            class="net.bioclipse.ds.libsvm.PCMSignLibSvmPrediction"
+            endpoint="net.bioclipse.ds.cyp"
+            informative="false">
+
+            <parameter name="isClassification" value="true"/>
+            <parameter name="positiveValue" value="2"/>
+            <parameter name="negativeValue" value="1"/>
+            <parameter name="classLabels" value="1,2"/>
+
+            <parameter name="signatures.min.height" value="1"/>
+            <parameter name="signatures.max.height" value="3"/>
+            <resource name="modelfile" path="/models/pcmcyp.svm"/>
+            <resource name="signaturesfile" path="/models/signatures1-3.txt"/>
+            <parameter name="Model type" value="Proteochemometrics"/>
+            <parameter name="Learning model" value="SVM"/>
+
+            <resource name="proteinDescriptorFile" path="models/ProteinDescriptors-raw.txt"/>
+            <parameter name="proteinNames" value="1A2,2C9,2C19,2D6,3A4"/>
+            <parameter name="proteinDescriptorStartIndex" value="80973"/>
+
+            <parameter name="Model performance" value="0.91"/>
+            <parameter name="Model choice" value="Maximal accuracy, with 5-fold cross-validated accuracy as objective function"/>
+            <parameter name="Learning parameters" value="kernel=RBF, c=8, gamme=0.01"/>
+            <parameter name="Descriptors" value="Signatures (height 1-3)"/>
+            <parameter name="Observations" value="81277"/>
+            <parameter name="Variables" value="81014"/>
+        </test>
+   </extension>
+      
+</plugin>

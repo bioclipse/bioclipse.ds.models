@@ -5,3 +5,4 @@ properties.2.value=These mutagenicity models are built on data from Ames Salmone
 
 requires.0.namespace = org.eclipse.equinox.p2.iu
 requires.0.name = net.bioclipse.ds_feature.feature.group
+requires.0.name = net.bioclipse.r_feature.feature.group

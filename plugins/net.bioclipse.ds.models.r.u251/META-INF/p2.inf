@@ -5,3 +5,7 @@ properties.2.value=A model was built on data from a cell line screening, where c
 
 requires.0.namespace = org.eclipse.equinox.p2.iu
 requires.0.name = net.bioclipse.ds_feature.feature.group
+requires.1.namespace = org.eclipse.equinox.p2.iu
+requires.1.name = net.bioclipse.r_feature.feature.group
+requires.2.namespace = org.eclipse.equinox.p2.iu
+requires.2.name = net.bioclipse.qsar_feature.feature.group

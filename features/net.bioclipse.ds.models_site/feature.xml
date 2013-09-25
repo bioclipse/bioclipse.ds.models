@@ -29,9 +29,9 @@
          id="net.bioclipse.opentox.ds_feature"
          version="0.0.0"/>
 
-   <includes
+   <!--<includes
          id="net.bioclipse.smartcyp_feature"
-         version="0.0.0"/>
+         version="0.0.0"/>-->
 
    <plugin
          id="org.openscience.cdk.signature"

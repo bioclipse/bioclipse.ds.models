@@ -22,13 +22,15 @@ import org.openscience.cdk.qsar.descriptors.molecular.RuleOfFiveDescriptor;
 import org.openscience.cdk.qsar.result.IntegerResult;
 
 import net.bioclipse.cdk.domain.ICDKMolecule;
+import net.bioclipse.core.domain.IBioObject;
+import net.bioclipse.ds.model.AbstractDSMolModel;
 import net.bioclipse.ds.model.AbstractDSTest;
 import net.bioclipse.ds.model.DSException;
 import net.bioclipse.ds.model.ITestResult;
 import net.bioclipse.ds.model.result.SimpleResult;
 
 
-public class RuleOfFiveTest extends AbstractDSTest{
+public class RuleOfFiveTest extends AbstractDSMolModel{
 
     private static final Logger logger = Logger.getLogger(RuleOfFiveTest.class);
 
@@ -38,8 +40,12 @@ public class RuleOfFiveTest extends AbstractDSTest{
 
 
     @Override
-    protected List<? extends ITestResult> doRunTest( ICDKMolecule cdkmol,
-                                                     IProgressMonitor monitor ) {
+	protected List<? extends ITestResult> doRunTest(IBioObject input,
+			IProgressMonitor monitor) {
+		
+		if (!(input instanceof ICDKMolecule))
+			return returnError("Input is not a Molecule", "");
+		ICDKMolecule cdkmol = (ICDKMolecule) input;
 
 //    	monitor.beginTask(getName(), IProgressMonitor.UNKNOWN);
 

@@ -10,6 +10,7 @@ import org.eclipse.core.runtime.IProgressMonitor;
 
 import net.bioclipse.cdk.domain.ICDKMolecule;
 import net.bioclipse.core.business.BioclipseException;
+import net.bioclipse.core.domain.IBioObject;
 import net.bioclipse.ds.model.ITestResult;
 import net.bioclipse.ds.model.result.ExternalMoleculeMatch;
 
@@ -25,8 +26,12 @@ public class SimilaritySearchChEMBLModel extends SimilaritySearchModel{
 	private static final Logger logger = Logger.getLogger(SimilaritySearchChEMBLModel.class);
 
 	@Override
-	protected List<? extends ITestResult> doRunTest(ICDKMolecule molecule,
+	protected List<? extends ITestResult> doRunTest(IBioObject input,
 			IProgressMonitor monitor) {
+		
+		if (!(input instanceof ICDKMolecule))
+			return returnError("Input is not a Molecule", "");
+		ICDKMolecule molecule = (ICDKMolecule) input;
 		
 		List<? extends ITestResult> matches = super.doRunTest(molecule, monitor);
 		List<ExternalMoleculeMatch> toRemove = new ArrayList<ExternalMoleculeMatch>();

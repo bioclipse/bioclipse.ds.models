@@ -14,6 +14,8 @@ import net.bioclipse.cdk.domain.ICDKMolecule;
 import net.bioclipse.chemspider.Activator;
 import net.bioclipse.chemspider.business.IChemspiderManager;
 import net.bioclipse.core.business.BioclipseException;
+import net.bioclipse.core.domain.IBioObject;
+import net.bioclipse.ds.model.AbstractDSMolModel;
 import net.bioclipse.ds.model.AbstractDSTest;
 import net.bioclipse.ds.model.DSException;
 import net.bioclipse.ds.model.ITestResult;
@@ -25,7 +27,7 @@ import net.bioclipse.ds.model.result.ExternalMoleculeMatch;
  * @author Ola Spjuth
  *
  */
-public class CopyOfSimilaritySearchChEMBLModel extends AbstractDSTest{
+public class CopyOfSimilaritySearchChEMBLModel extends AbstractDSMolModel{
 
 	private static final String TANIMOTO_DISTANCE = "distance.tanimoto";
 	private static final int MAX_NEIGHBORS = 15;
@@ -54,8 +56,12 @@ public class CopyOfSimilaritySearchChEMBLModel extends AbstractDSTest{
 
 
 	@Override
-	protected List<? extends ITestResult> doRunTest(ICDKMolecule molecule,
+	protected List<? extends ITestResult> doRunTest(IBioObject input,
 			IProgressMonitor monitor) {
+		
+		if (!(input instanceof ICDKMolecule))
+			return returnError("Input is not a Molecule", "");
+		ICDKMolecule molecule = (ICDKMolecule) input;
 
 		//Managers we need
 		IChemspiderManager chemspider = Activator.getDefault().getJavaChemspiderManager();

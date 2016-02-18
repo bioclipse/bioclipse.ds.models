@@ -3,6 +3,5 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Solubility
 Bundle-SymbolicName: net.bioclipse.ds.models.MM_solubility;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: net.bioclipse.ds;bundle-version="2.6.2",
  net.bioclipse.ds.liblinear;bundle-version="0.1.1"

@@ -1,4 +1,4 @@
-<?xml version="2.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="net.bioclipse.ds.models_feature"
       label="DS Models"
@@ -86,16 +86,19 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
    <plugin
          id="net.bioclipse.ds.models.MM_logd80k"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
    <plugin
          id="net.bioclipse.ds.models.MM_solubility"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
 </feature>

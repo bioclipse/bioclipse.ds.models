@@ -39,5 +39,22 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+   <plugin
+         id="net.bioclipse.ds.models.MM_logd1200k"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+   <plugin
+         id="net.bioclipse.ds.models.MM_logd80k"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+   <plugin
+         id="net.bioclipse.ds.models.MM_solubility"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
 </feature>

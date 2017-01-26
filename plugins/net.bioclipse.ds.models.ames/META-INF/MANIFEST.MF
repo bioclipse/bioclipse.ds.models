@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: AMES mutagenicity
 Bundle-SymbolicName: net.bioclipse.ds.models.ames;singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: bioclipse.net
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,

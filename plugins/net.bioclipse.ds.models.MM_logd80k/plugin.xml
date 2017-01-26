@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="net.bioclipse.decisionsupport">
+	   <endpoint
+		    id="net.bioclipse.ds.PhysChem"
+		    description="PhysicoChemical properties"
+		    name="PhysChem">
+		</endpoint>
+		<test
+			class="net.bioclipse.ds.liblinear.SignaturesLibLinearPrediction"
+			endpoint="net.bioclipse.ds.PhysChem"
+			id="net.bioclipse.ds.models.MMpaper_models.logd80k"
+			name="LogD 80k">
+            <parameter name="highPercentile" value="0.442758776512683"/>
+            <parameter name="lowPercentile" value="-0.37828464984677623"/>
+            <parameter name="isClassification" value="false"/>
+            <parameter name="signatures.min.height" value="1"/>
+            <parameter name="signatures.max.height" value="3"/>
+            <resource name="modelfile" path="/resources/logd80k.linmdl"/>
+            <resource name="signaturesfile" path="/resources/logd80k.signatures"/>
+		</test>
+	</extension>
+</plugin>

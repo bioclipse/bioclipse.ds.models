@@ -17,7 +17,6 @@ Require-Bundle: org.eclipse.ui,
  org.openscience.cdk.interfaces,
  org.openscience.cdk.standard,
  org.openscience.cdk.io,
- org.openscience.cdk.nonotify,
  net.bioclipse.chemspider,
  net.bioclipse.rdf
 Import-Package: org.apache.log4j

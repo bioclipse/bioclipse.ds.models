@@ -14,9 +14,7 @@ Require-Bundle: org.eclipse.ui,
  net.bioclipse.core,
  net.bioclipse.ds.common,
  net.bioclipse.ds.ui,
- org.openscience.cdk.interfaces,
- org.openscience.cdk.standard,
- org.openscience.cdk.io,
  net.bioclipse.chemspider,
  net.bioclipse.rdf
-Import-Package: org.apache.log4j
+Import-Package: org.apache.log4j,
+ org.openscience.cdk.interfaces;version="1.5.13"

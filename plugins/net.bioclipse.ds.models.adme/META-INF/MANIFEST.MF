@@ -3,18 +3,21 @@ Bundle-ManifestVersion: 2
 Bundle-Name: ADME for DS
 Bundle-SymbolicName: net.bioclipse.ds.models.adme;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: net.bioclipse.ds.adme.Activator
 Bundle-Vendor: The Bioclipse Team
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  net.bioclipse.ds,
  net.bioclipse.cdk.business,
  net.bioclipse.core,
- org.openscience.cdk.interfaces,
- org.openscience.cdk.qsar,
- org.openscience.cdk.qsarmolecular,
- org.openscience.cdk.standard,
  org.eclipse.help
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy
-Import-Package: org.apache.log4j
+Import-Package: org.apache.log4j,
+ org.openscience.cdk.aromaticity;version="1.5.13",
+ org.openscience.cdk.exception;version="1.5.13",
+ org.openscience.cdk.graph;version="1.5.13",
+ org.openscience.cdk.interfaces;version="1.5.13",
+ org.openscience.cdk.qsar;version="1.5.13",
+ org.openscience.cdk.qsar.descriptors.molecular;version="1.5.13",
+ org.openscience.cdk.qsar.result;version="1.5.13",
+ org.openscience.cdk.tools.manipulator;version="1.5.13"

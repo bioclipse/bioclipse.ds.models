@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MM_logd1200k
+Bundle-SymbolicName: net.bioclipse.ds.models.MM_logd1200k;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: net.bioclipse.ds.liblinear;bundle-version="0.1.1"

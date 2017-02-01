@@ -15,10 +15,10 @@ Require-Bundle: org.eclipse.ui,
  net.bioclipse.ds.ui,
  net.bioclipse.ds.libsvm,
  net.bioclipse.r.business,
- org.openscience.cdk.interfaces,
  net.bioclipse.ds.signatures,
  signatures,
  org.eclipse.core.resources,
  net.bioclipse.ds.r
-Import-Package: org.apache.log4j
+Import-Package: org.apache.log4j,
+ org.openscience.cdk.interfaces;version="1.5.13"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

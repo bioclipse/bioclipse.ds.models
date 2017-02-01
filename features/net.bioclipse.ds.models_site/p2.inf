@@ -1,0 +1,22 @@
+net.bioclipse.ds.models.MM_logd1200k
+net.bioclipse.ds.models.MM_logd80k
+net.bioclipse.ds.models.MM_solubility
+
+units.1.id=category.net.bioclipse.ds.models.MM
+units.1.version=1.0.0
+units.1.provides.1.namespace=org.eclipse.equinox.p2.iu
+units.1.provides.1.name=category.net.bioclipse.ds.models.MM
+units.1.provides.1.version=1.0.0
+units.1.properties.1.name=org.eclipse.equinox.p2.type.category
+units.1.properties.1.value=true
+units.1.properties.2.name=org.eclipse.equinox.p2.name
+units.1.properties.2.value=PhysicoChemical properties
+units.1.requires.1.namespace=org.eclipse.equinox.p2.iu
+units.1.requires.1.name=net.bioclipse.ds.models.MM_logd1200k
+units.1.requires.1.range=[1.0.0,2.0.0)
+units.1.requires.2.namespace=org.eclipse.equinox.p2.iu
+units.1.requires.2.name=net.bioclipse.ds.models.MM_logd80k
+units.1.requires.2.range=[1.0.0,2.0.0)
+units.1.requires.3.namespace=org.eclipse.equinox.p2.iu
+units.1.requires.3.name=net.bioclipse.ds.models.MM_solubility
+units.1.requires.3.range=[1.0.0,2.0.0)

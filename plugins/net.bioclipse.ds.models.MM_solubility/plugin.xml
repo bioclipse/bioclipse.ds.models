@@ -8,16 +8,16 @@
 		    name="PhysChem">
 		</endpoint>
 		<test
-			class="net.bioclipse.ds.liblinear.SignaturesLibLinearPrediction"
+			class="net.bioclipse.ds.libsvm.SignaturesLibSVMPrediction"
 			endpoint="net.bioclipse.ds.PhysChem"
 			id="net.bioclipse.ds.models.MMpaper_models.solubility"
 			name="Solubility">
-            <parameter name="highPercentile" value="0.040521372173422776"/>
-            <parameter name="lowPercentile" value="-0.5733178170677022"/>
+            <parameter name="highPercentile" value="0.05738120372486222"/>
+            <parameter name="lowPercentile" value="-0.09957837451170448"/>
             <parameter name="isClassification" value="false"/>
             <parameter name="signatures.min.height" value="1"/>
             <parameter name="signatures.max.height" value="3"/>
-            <resource name="modelfile" path="/resources/solubility.linmdl"/>
+            <resource name="modelfile" path="/resources/solubility.svm"/>
             <resource name="signaturesfile" path="/resources/solubility.signatures"/>
 		</test>
 	</extension>

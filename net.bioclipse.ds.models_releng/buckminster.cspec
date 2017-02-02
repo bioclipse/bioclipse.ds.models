@@ -3,6 +3,7 @@
     <dependencies>
         <dependency name="net.bioclipse.ds.models_site" componentType="eclipse.feature" versionDesignator="1.0.0"/>
         <dependency name="org.eclipse.rcp" componentType="eclipse.feature"/>
+        <dependency name="org.openscience.cdk_bundle" componentType="osgi.bundle"/>
     </dependencies>
     <actions>
       <public name="site.mirror.p2" actor="p2SiteMirror">
